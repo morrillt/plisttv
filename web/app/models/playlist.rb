@@ -16,6 +16,7 @@ class Playlist
     video= Video.first({:conditions => {:ytid => o[:ytid]}})
     unless (video)
       yt_feed= RestClient.get("http://gdata.youtube.com/feeds/api/videos/#{o[:ytid]}?v=2&alt=json")
+      puts yt_feed
       yt_video= JSON.parse(yt_feed)
       title= yt_video["entry"]["title"]["$t"]
       authors= [];

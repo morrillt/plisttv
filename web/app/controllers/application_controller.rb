@@ -9,6 +9,14 @@ class ApplicationController < ActionController::Base
   end
 
   private
+  def discard_new
+    # session[:new]= nil
+    if session[:new]
+      Playlist.find(session[:new]).delete
+      session[:new]= nil
+    end
+  end
+
   def require_user
     # should test for session expiration
     if !session

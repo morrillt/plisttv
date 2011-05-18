@@ -691,7 +691,7 @@ h2 {
   margin: 5px 0;
 }
 /* line 217, ../../../app/stylesheets/styles.sass */
-#playlist li.video-item.playing a, #playlist li.video-item.playing a:hover {
+#playlist li.video-item.playing a.play, #playlist li.video-item.playing a.play:hover {
   border-color: red;
   background-color: #ffc7c7;
 }
@@ -1229,4 +1229,101 @@ h2 {
   margin-left: 5px;
   font-size: 12px;
   color: blue;
+}
+
+/* line 542, ../../../app/stylesheets/styles.sass */
+#signup {
+  background: none repeat scroll 0 0 black;
+  color: #cccccc;
+  margin: 20px auto 0;
+  padding: 20px 40px;
+  width: 800px;
+  height: 300px;
+}
+/* line 550, ../../../app/stylesheets/styles.sass */
+#signup h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 555, ../../../app/stylesheets/styles.sass */
+#signup .username {
+  float: left;
+  padding: 20px 0;
+}
+/* line 558, ../../../app/stylesheets/styles.sass */
+#signup .username .plist, #signup .username .input, #signup .username .sign-in-btn {
+  float: left;
+}
+/* line 560, ../../../app/stylesheets/styles.sass */
+#signup .username .plist {
+  color: white;
+  font-size: 25px;
+}
+/* line 563, ../../../app/stylesheets/styles.sass */
+#signup .username .input {
+  margin-top: -13px;
+}
+/* line 565, ../../../app/stylesheets/styles.sass */
+#signup .username .input p {
+  font-size: 12px;
+}
+/* line 567, ../../../app/stylesheets/styles.sass */
+#signup .username .input input {
+  height: 25px;
+  font-size: 20px;
+  border: 1px solid white;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+}
+/* line 572, ../../../app/stylesheets/styles.sass */
+#signup .username .sign-in-btn {
+  background-color: #ffb800;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-top: 2px;
+  margin-left: 10px;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+}
+/* line 580, ../../../app/stylesheets/styles.sass */
+#signup .username .error p {
+  color: red;
+  clear: left;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+/* line 587, ../../../app/stylesheets/styles.sass */
+.edit-playlist .control-btns {
+  float: right;
+  margin-top: 10px;
+}
+/* line 590, ../../../app/stylesheets/styles.sass */
+.edit-playlist a.save, .edit-playlist a.discard {
+  color: white;
+  padding: 5px 10px;
+  background-color: #666666;
+  font-size: 14px;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
 }

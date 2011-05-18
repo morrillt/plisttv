@@ -9,6 +9,10 @@
             %h2 Suggestions
             =render "playlists/suggestions"
         =render "index/playlist"
+        -if @new
+          .control-btns
+            %a.save{:href=>"/#{current_member.username}/#{@playlist.id}/save"} Save
+            %a.discard{:href=>"/#{current_member.username}"} Discard
 
 =content_for(:javascripts) do
   :javascript

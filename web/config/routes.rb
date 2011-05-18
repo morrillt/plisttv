@@ -28,6 +28,7 @@ Web::Application.routes.draw do
   match "/:member/playlists" => "playlists#index", :via => :get
   match "/:member/playlists" => "playlists#create", :via => :post
 
+  match "/:member/:playlist/save" => "playlists#save", :via => :get
   match "/:member/:playlist/edit" => "playlists#edit", :via => :get
   match "/:member/:playlist/new" => "playlists#new", :via => :get
   match "/:member/:playlist" => "playlists#show", :via => :get

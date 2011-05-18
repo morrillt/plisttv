@@ -1,6 +1,7 @@
 class MemberController < ApplicationController
   # before_filter :valid_member?
   before_filter :is_member?, :only => [:index]
+  before_filter :discard_new
   skip_before_filter :require_user, :only => [:index]
 
   # GET /:member
@@ -28,7 +29,6 @@ class MemberController < ApplicationController
         format.html { render "index/index" }
       end
     else
-      puts "here????"
       if @member
         redirect_to "/#{@member.username}"
       else

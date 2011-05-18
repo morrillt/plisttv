@@ -1,5 +1,6 @@
 class PlaylistsController < ApplicationController
-  before_filter :valid_member?, :only => [:create, :edit]
+  before_filter :valid_member?, :only => [:create, :edit, :save, :new]
+  before_filter :discard_new, :except => [:new, :save]
   skip_before_filter :require_user, :only => [:index, :show]
 
   # GET /:member/playlists
@@ -17,7 +18,14 @@ class PlaylistsController < ApplicationController
   end
 
   def new
-    @end= true
+    @new= true
+    edit
+  end
+
+  def save
+    playlist= Playlist.find(session[:new])
+    session[:new]= nil
+    redirect_to "/#{current_member.username}/#{playlist.id}"
   end
 
   def create
@@ -73,6 +81,10 @@ class PlaylistsController < ApplicationController
     @playlist= Playlist.find(params[:playlist])
     @on= @playlist
     @videos= @playlist.list_videos
+    if @new
+      session[:new]= @playlist.id
+    end
+
     respond_to do |format|
       format.html { render "edit" }
     end

@@ -71,6 +71,22 @@ jQuery(document).ready(function() {
     $("#suggestions").suggestions();
     $(".header").playlist_header();
 
+    // $(".save").click(function(e) {
+    // 	e.preventDefault();
+    // 	var url= "/"+session.username+"/"+current_playlist;
+    // 	$.post(url+"/save", function(data) {
+    // 	    window.location= url;
+    // 	});
+    // });
+
+    // $(".discard").click(function(e) {
+    // 	e.preventDefault();
+    // 	var url= "/"+session.username+"/"+current_playlist;
+    // 	$.post(url+"/discard", function(data) {
+    // 	    window.location= "/"+session.username;
+    // 	});
+    // });
+
     $(document).bind("FB_ready", function() {
 	var query= FB.Data.query('SELECT post_id, actor_id, target_id, message FROM stream WHERE source_id in (SELECT target_id FROM connection WHERE source_id='+session.uid+') AND is_hidden = 0');
 	query.wait(function(rows) {
