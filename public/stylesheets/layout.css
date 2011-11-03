@@ -1,7 +1,7 @@
 /*
 Syntax error: Undefined mixin 'container'.
-        on line 25 of app/stylesheets/layout.sass, in `container'
-        from line 25 of app/stylesheets/layout.sass
+        on line 25 of /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass, in `container'
+        from line 25 of /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass
 
 20:   font-size: 30px
 21: h2
@@ -16,8 +16,8 @@ Syntax error: Undefined mixin 'container'.
 30:     border: 1px dashed #aaaaaa
 
 Backtrace:
-app/stylesheets/layout.sass:25:in `container'
-app/stylesheets/layout.sass:25
+/Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass:25:in `container'
+/Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass:25
 /Users/vladimirpenkin/.rvm/gems/ruby-1.9.2-p290@plist/gems/sass-3.1.8/lib/sass/tree/visitors/perform.rb:170:in `visit_mixin'
 /Users/vladimirpenkin/.rvm/gems/ruby-1.9.2-p290@plist/gems/sass-3.1.8/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/vladimirpenkin/.rvm/gems/ruby-1.9.2-p290@plist/gems/sass-3.1.8/lib/sass/tree/visitors/perform.rb:18:in `visit'
@@ -99,4 +99,4 @@ app/stylesheets/layout.sass:25
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'container'.\A         on line 25 of app/stylesheets/layout.sass, in `container'\A         from line 25 of app/stylesheets/layout.sass\A \A 20:   font-size: 30px\A 21: h2\A 22:   font-size: 20px\A 23: \A 24: .container\A 25:   +container\A 26: \A 27: .top-container\A 28:   #header\A 29:     height: 80px\A 30:     border: 1px dashed #aaaaaa"; }
+  content: "Syntax error: Undefined mixin 'container'.\A         on line 25 of /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass, in `container'\A         from line 25 of /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass\A \A 20:   font-size: 30px\A 21: h2\A 22:   font-size: 20px\A 23: \A 24: .container\A 25:   +container\A 26: \A 27: .top-container\A 28:   #header\A 29:     height: 80px\A 30:     border: 1px dashed #aaaaaa"; }

@@ -11,7 +11,7 @@ function is_youtube_url(url) {
   return valid;
 }
 
-// 2. This code loads the IFrame Player API code asynchronously.
+// // 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
 tag.src = "http://www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -31,12 +31,11 @@ function onYouTubePlayerAPIReady(idvideo) {
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-  var embedCode = event.target.getVideoEmbedCode();
-  var ifr_source = $(embedCode).attr('src');
-  var wmode = "?wmode=transparent";
-  $(embedCode).attr('src',ifr_source+wmode);
-
-  event.target.playVideo();
+  // var embedCode = event.target.getVideoEmbedCode();
+  // var ifr_source = $(embedCode).attr('src');
+  // var wmode = "?wmode=transparent";
+  // $(embedCode).attr('src',ifr_source+wmode);
+  // event.target.playVideo();
 }
 
 // 5. The API calls this function when the player's state changes.
@@ -64,7 +63,9 @@ function create_player(ytid) {
     videoId: ytid,
     playerVars: {
       'autoplay': 0,
-      'wmode': 'transparent'
+      'wmode': 'transparent',
+      'controls': 0,
+      // 'showinfo': 0,
     },
     events: {
       'onReady': onPlayerReady,

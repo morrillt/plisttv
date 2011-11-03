@@ -66,5 +66,19 @@ $(function() {
 
   $("#videos-list").playlist()
   $("#ytvideos-list").playlist()
+  
+  $("#plist-play").live('click', function() {
+    player.playVideo()
+  })
+  $("#plist-stop").live('click', function() {
+    player.stopVideo()
+  })
+  $("#plist-pause").live('click', function() {
+    player.pauseVideo()
+  })
+  
+  // $(".player-hover").live('mousemove', function(){
+  //   $('.controls').slideToggle('slow')
+  // })
 
 })

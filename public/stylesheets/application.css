@@ -57,37 +57,37 @@ a img {
   border: none;
 }
 
-/* line 7, ../../app/stylesheets/layout.sass */
+/* line 7, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 body {
   margin-top: 0;
   font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
 }
 
-/* line 11, ../../app/stylesheets/layout.sass */
+/* line 11, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 li {
   display: block;
 }
-/* line 13, ../../app/stylesheets/layout.sass */
+/* line 13, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 li a {
   text-decoration: none;
 }
 
-/* line 16, ../../app/stylesheets/layout.sass */
+/* line 16, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 a {
   color: black;
 }
 
-/* line 19, ../../app/stylesheets/layout.sass */
+/* line 19, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 h1 {
   font-size: 30px;
 }
 
-/* line 21, ../../app/stylesheets/layout.sass */
+/* line 21, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 h2 {
   font-size: 20px;
 }
 
-/* line 24, ../../app/stylesheets/layout.sass */
+/* line 24, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 .container {
   width: 950px;
   margin: 0 auto;
@@ -95,34 +95,34 @@ h2 {
   *zoom: 1;
 }
 
-/* line 28, ../../app/stylesheets/layout.sass */
+/* line 28, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 .top-container #header {
   height: 80px;
   border: 1px dashed #aaaaaa;
   margin-bottom: 20px;
 }
-/* line 32, ../../app/stylesheets/layout.sass */
+/* line 32, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 .top-container .logo {
   float: left;
 }
-/* line 34, ../../app/stylesheets/layout.sass */
+/* line 34, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 .top-container .logo a {
   color: black;
   font-size: 30px;
   padding: 20px;
 }
-/* line 38, ../../app/stylesheets/layout.sass */
+/* line 38, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 .top-container .account {
   float: right;
   padding: 20px;
 }
-/* line 41, ../../app/stylesheets/layout.sass */
+/* line 41, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 .top-container .account a {
   float: left;
   margin-left: 10px;
 }
 
-/* line 45, ../../app/stylesheets/layout.sass */
+/* line 45, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 .main-container {
   display: inline;
   float: left;
@@ -130,48 +130,48 @@ h2 {
   width: 750px;
 }
 
-/* line 52, ../../app/stylesheets/layout.sass */
+/* line 52, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 #main, #right {
   min-height: 800px;
 }
 
-/* line 55, ../../app/stylesheets/layout.sass */
+/* line 55, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 #main .main-content {
   padding: 10px;
 }
 
-/* line 59, ../../app/stylesheets/layout.sass */
+/* line 59, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 .filter-youtube-form {
   display: none;
 }
 
-/* line 62, ../../app/stylesheets/layout.sass */
+/* line 62, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 .clear {
   clear: both;
 }
 
-/* line 65, ../../app/stylesheets/layout.sass */
+/* line 65, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 .txtPassword {
   display: none;
 }
 
-/* line 68, ../../app/stylesheets/layout.sass */
+/* line 68, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 .txtConfirmPassword {
   display: none;
 }
 
-/* line 71, ../../app/stylesheets/layout.sass */
+/* line 71, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 table.featured {
   font-size: 12px;
   border: 1px solid #e7e7e7;
   width: 700px;
 }
-/* line 75, ../../app/stylesheets/layout.sass */
+/* line 75, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 table.featured td {
   padding: 5px 5px;
   border-bottom: 1px solid #e7e7e7;
 }
-/* line 78, ../../app/stylesheets/layout.sass */
+/* line 78, /Users/vladimirpenkin/Sites/plist/app/stylesheets/layout.sass */
 table.featured .promote {
   background-color: rgba(0, 0, 255, 0.1);
 }
@@ -923,6 +923,35 @@ a.left:active {
 /* line 545, ../../app/stylesheets/styles.sass */
 .slogan {
   text-align: center;
+}
+
+/* line 1, ../../app/stylesheets/player.sass */
+.player-hover {
+  width: 940px;
+  height: 510px;
+  opacity: 1;
+  position: absolute;
+  z-index: 2;
+}
+
+/* line 7, ../../app/stylesheets/player.sass */
+.controls {
+  padding: 5px;
+  background-color: black;
+  border: 1px solid #777777;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 200px;
+  position: absolute;
+  top: 350px;
+  left: 450px;
+  color: white;
+  z-index: 3;
+}
+/* line 20, ../../app/stylesheets/player.sass */
+.controls a {
+  color: white;
 }
 
 /* line 2, ../../app/stylesheets/playlist.sass */
